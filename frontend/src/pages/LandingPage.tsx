@@ -35,6 +35,9 @@ export function LandingPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
+                <Link to={ROUTES.login}>Sign in</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
                 <Link to={ROUTES.findings}>View findings</Link>
               </Button>
             </div>
