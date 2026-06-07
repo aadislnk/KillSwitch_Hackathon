@@ -1,6 +1,9 @@
 export const ROUTES = {
-  landing: "/landing",
-  dashboard: "/",
+  landing: "/",
+  login: "/login",
+  signUp: "/sign-up",
+  forgotPassword: "/forgot-password",
+  dashboard: "/dashboard",
   integrations: "/integrations",
   findings: "/findings",
   rules: "/rules",
