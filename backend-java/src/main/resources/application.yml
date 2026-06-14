@@ -1,0 +1,37 @@
+server:
+  port: ${PORT:8000}
+
+killswitch:
+  supabase:
+    url: ${SUPABASE_URL:}
+    anon-key: ${SUPABASE_ANON_KEY:}
+    service-role-key: ${SUPABASE_SERVICE_ROLE_KEY:}
+  gemini:
+    api-key: ${GEMINI_API_KEY:}
+    model: gemini-2.5-flash
+  github:
+    token: ${GITHUB_TOKEN:}
+  stripe:
+    secret-key: ${STRIPE_SECRET_KEY:}
+  slack:
+    webhook-url: ${SLACK_WEBHOOK_URL:}
+  aws:
+    access-key: ${AWS_ACCESS_KEY:}
+    secret-key: ${AWS_SECRET_KEY:}
+    region: ${AWS_REGION:us-east-1}
+  encryption:
+    key: ${ENCRYPTION_KEY:your-32-char-secret-key-here!!!!}
+  scheduler:
+    timezone: UTC
+    sync-interval-hours: 6
+    analysis-interval-hours: 6
+    rule-engine-interval-hours: 1
+  app:
+    env: ${APP_ENV:development}
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  task:
+    scheduling:
+      enabled: true
